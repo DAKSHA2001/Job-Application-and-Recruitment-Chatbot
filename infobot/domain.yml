@@ -1,0 +1,75 @@
+intents:
+- name
+- DOB
+- GradYear
+- ExpYear
+- TechSkill
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- mood_great
+- mood_unhappy
+- thankful
+
+entities:
+- PERSON
+- date
+- year
+- exp
+- skill
+
+slots:
+  PERSON:
+    type: unfeaturized
+  date:
+    type: unfeaturized  
+  year:
+    type: unfeaturized
+  exp:
+    type: unfeaturized
+  skill:
+    type: unfeaturized
+    
+    
+responses:
+  
+  utter_ask_dob:
+  - text: Great!, Could you please enter your Date of Birth in the format DD/MM/YYYY
+  utter_ask_gradyear:
+  - text: Perfect, Could you please enter your Year of Graduation
+  utter_ask_expyear:
+  - text: Nice!, Could you please enter your years of experience
+  utter_ask_skills:
+  - text: Well Done, Could you please enter your Top Five technical skills. Keep the skills separated by commas for easier processing
+  utter_thankful:
+  - text: Your Most Welcome!
+  utter_goodbye:
+  - text: Bye
+  utter_recorded:
+  - text: Your responses have been recorded successfully. Have a nice day
+  utter_greet:
+  - text: Hey! How are you?I am InfoBot.I will help you record your details for further processing. I request you to enter the details as directed by me. Could you please enter your good name
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+
+actions:
+- action_save_name
+- action_save_dob
+- action_save_gradyear
+- action_save_expyear
+- action_save_techskills
+- utter_ask_dob
+- utter_ask_gradyear
+- utter_ask_expyear
+- utter_ask_skills
+- utter_recorded
+- utter_thankful
+- utter_goodbye
+- utter_greet
+- utter_iamabot
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
