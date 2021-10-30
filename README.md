@@ -1,1 +1,1 @@
-# RASA-chatbot-to-interactively-record-applicant-details-into-a-Google-Sheet
+# RASA chatbot for the Job Application and Recruitment Process of a Company
