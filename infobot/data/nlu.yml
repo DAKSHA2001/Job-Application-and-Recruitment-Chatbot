@@ -1,0 +1,275 @@
+version: "2.0"
+
+nlu:
+
+- intent: name
+  examples: |
+    - [Kumar Saurav]{"entity":"PERSON","value":"Kumar Saurav"}
+    - [Daksha Dinesh Shenoy]{"entity":"PERSON","value":"Daksha Dinesh Shenoy"}
+    - Myself [James]{"entity":"PERSON","value":"James"}
+    - My good name is [James]{"entity":"PERSON","value":"James"}
+    - Good name is [Ravi]{"entity":"PERSON","value":"Ravi"}
+    - My first name is [Ravi]{"entity":"PERSON","value":"Ravi"}
+    - [Kiran]{"entity":"PERSON","value":"Kiran"}
+    - I am [Kiran]{"entity":"PERSON","value":"Kiran"}
+    - I am known as [Amanda]{"entity":"PERSON","value":"Amanda"}
+    - My Name is [Michael]{"entity":"PERSON","value":"Michael"}
+    - You can call me [Shubham Singh]{"entity":"PERSON","value":"Shubham Singh"}
+    - I am known as [Rachel Singh]{"entity":"PERSON","value":"Rachel Singh"}
+    - [Hawaijahaj]{"entity":"PERSON","value":"Hawaijahaj"}
+    - [John]{"entity":"PERSON","value":"John"}
+    - [Michael]{"entity":"PERSON","value":"Michael"}
+    - [Christopher]{"entity":"PERSON","value":"Christopher"}
+    - [Jessica]{"entity":"PERSON","value":"Jessica"}
+    - [Matthew]{"entity":"PERSON","value":"Matthew"}
+    - [Ashley]{"entity":"PERSON","value":"Ashley"}
+    - [Jennifer]{"entity":"PERSON","value":"Jennifer"}
+    - [Joshua]{"entity":"PERSON","value":"Joshua"}
+    - [Amanda]{"entity":"PERSON","value":"Amanda"}
+    - [Daniel]{"entity":"PERSON","value":"Daniel"}
+    - [David]{"entity":"PERSON","value":"David"}
+    - [James]{"entity":"PERSON","value":"James"}
+    - [Robert]{"entity":"PERSON","value":"Robert"}
+    - [Joseph]{"entity":"PERSON","value":"Joseph"}
+    - [Andrew]{"entity":"PERSON","value":"Andrew"}
+    - [Ryan]{"entity":"PERSON","value":"Ryan"}
+    - [Brandon]{"entity":"PERSON","value":"Brandon"}
+    - [Jason]{"entity":"PERSON","value":"Jason"}
+    - [Justin]{"entity":"PERSON","value":"Justin"}
+    - [Sarah]{"entity":"PERSON","value":"Sarah"}
+    - [William]{"entity":"PERSON","value":"William"}
+    - [Jonathan]{"entity":"PERSON","value":"Jonathan"}
+    - [Stephanie]{"entity":"PERSON","value":"Stephanie"}
+    - [Brian]{"entity":"PERSON","value":"Brian"}
+    - [Kumar Ravi]{"entity":"PERSON","value":"Kumar Ravi"}
+    - [Aman Raj]{"entity":"PERSON","value":"Aman Raj"}
+    
+- intent: DOB
+  examples: |
+    - [07/03/2001]{"entity":"date"}
+    - Ok my DOB is [19/10/2001]{"entity":"date"}
+    - Date of Birth is [12/11/2003]{"entity":"date"}
+    - Fine my Date of Birth is [08/05/1999]{"entity":"date"}
+    - DOB is [13/05/2000]{"entity":"date"}
+    - My Date of Birth is [16/12/2001]{"entity":"date"}
+    - Save my DOB as [09/09/1998]{"entity":"date"}
+    - My DOB is [07/03/2001]{"entity":"date"}
+    - This is my Date of Birth [11/11/2003]{"entity":"date"}
+
+- intent: GradYear
+  examples: |
+    - [2001]
+    - Ok my Year of Graduation is [2004]
+    - Year of Graduation is [1999]
+    - Fine my Year of Graduation is [1998]
+    - Year is [2000]
+    - Year [2004]
+    - My Year is [2001]
+    - My Year of Graduation is [2001]
+    - Save my Year of Graduation as [1998]
+    - My Graduation Year is [2001]
+    - Graduation Year is [2001]
+    - Graduation Year [2001]
+    - This is my Graduation Year [2003]
+    - This is my Year of Graduation [2003]
+
+
+- intent: ExpYear
+  examples: |
+    - [10]
+    - [11]
+    - [2]
+    - [3]
+    - [0]
+    - [5]
+    - [4] years of experience
+    - [4] years of work experience
+    - [1] work experience years
+    - [7] years work experience
+    - Work experience of [7]
+    - Work experience of [7] years
+    - Experience of working for [7] year
+    - Experience of working for [7] years
+    - Ok my work experience is [7] years
+    - Experience in working is [9] years
+    - Years of work experience is [9] years
+    - Fine my work experience is [8] years
+    - Experience [8] years
+    - Experience [8]
+    - Years [6]
+    - Save my work experience as [3] years
+
+
+- intent: TechSkill
+  examples: |
+    - [Java]{"entity":"skill","value":"Java"}
+    - [Python]{"entity":"skill","value":"Python"}
+    - [HTML]{"entity":"skill","value":"HTML"}
+    - [Scrum]{"entity":"skill","value":"Scrum"}
+    - [Git]{"entity":"skill","value":"Git"}
+    - [CSS]{"entity":"skill","value":"CSS"}
+    - [Machine Learning]{"entity":"skill","value":"Machine Learning"}
+    - [Azure]{"entity":"skill","value":"Azure"}
+    - [Unix]{"entity":"skill","value":"Unix"}
+    - [SQL Server]{"entity":"skill","value":"SQL Server"}
+    - [Docker]{"entity":"skill","value":"Docker"}
+    - [GCP]{"entity":"skill","value":"GCP"}
+    - [Algorithms]{"entity":"skill","value":"Algorithms"}
+    - [Analytical Skills]{"entity":"skill","value":"Analytical Skills"}
+    - [Big Data]{"entity":"skill","value":"Big Data"}
+    - [Statistics]{"entity":"skill","value":"Statistics"}
+    - [Data Analytics]{"entity":"skill","value":"Data Analytics"}
+    - [Data Mining]{"entity":"skill","value":"Data Mining"}
+    - [Database Design]{"entity":"skill","value":"Database Design"}
+    - [Database Management]{"entity":"skill","value":"Database Management"}
+    - [MongoDB]{"entity":"skill","value":"MongoDB"}
+    - [Apache]{"entity":"skill","value":"Apache"}
+    - [Statistical Analysis]{"entity":"skill","value":"Statistical Analysis"}
+    - [Coding]{"entity":"skill","value":"Coding"}
+    - [Information Technology]{"entity":"skill","value":"Information Technology"}
+    - [Network Architecture]{"entity":"skill","value":"Network Architecture"}
+    - [Network Security]{"entity":"skill","value":"Network Security"}
+    - [Networking]{"entity":"skill","value":"Networking"}
+    - [Operating Systems]{"entity":"skill","value":"Operating Systems"}
+    - [Programming]{"entity":"skill","value":"Programming"}
+    - [Security]{"entity":"skill","value":"Security"}
+    - [Solution Delivery]{"entity":"skill","value":"Solution Delivery"}
+    - [Storage]{"entity":"skill","value":"Storage"}
+    - [Systems Analysis](skill){"entity":"skill","value":"Systems Analysis"}
+    - [Information Security]{"entity":"skill","value":"Information Security"}
+    - [Customer Relationship Management]{"entity":"skill","value":"Customer Relationship Management"}
+    - [Cloud/SaaS Services]{"entity":"skill","value":"Cloud/SaaS Services"}
+    - [Artificial Intelligence]{"entity":"skill","value":"Artificial Intelligence"}
+    - [Chatbot Development]{"entity":"skill","value":"Chatbot Development"}
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+    - wassup
+    - hola
+    - ssup
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - very good
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+
+- intent: mood_unhappy
+  examples: |
+    - sad
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+    - awful
+    - terrible
+    - not very good
+    - extremely sad
+    - so sad
+
+- intent: thankful
+  examples: |
+    - Thanks
+    - Thank You
+    - TY
+    - Thanks a lot
+    - Thanks for your help
+    - Thank you for your help
+    - Thnx
+    - Thnk You
+    - Thank U
+    
+- intent: applicant
+  examples: |
+    - [1]
+    - applicant
+    - Applicant
+    - I am a applicant
+    - Apply
+    - I choose applicant
+    - I want to take applicant
+    - Make it as applicant
+    - Applicant it is
+
+- intent: new_applicant
+  examples: |
+    - [1]
+    - new
+    - New
+    - new applicant
+    - New Applicant
+    - I am a new applicant
+    - I choose new applicant
+    - I want to take new applicant
+    - Make it as new applicant
+    - New Applicant it is
+    
+- intent: old_applicant
+  examples: |
+    - [2]
+    - old
+    - Old
+    - old applicant
+    - Old Applicant
+    - I am an old applicant
+    - I choose old applicant
+    - I want to take old applicant
+    - Make it as old applicant
+    - Old Applicant it is
+
+- intent: recruiter
+  examples: |
+    - [2]
+    - recruiter
+    - Recruiter
+    - I am a Recruiter
+    - I choose Recruiter
+    - I want to take Recruiter
+    - Make it as Recruiter
+    - Recruiter it is
+    
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who is the US President?
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

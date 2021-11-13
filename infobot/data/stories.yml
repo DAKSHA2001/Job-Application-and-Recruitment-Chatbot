@@ -1,0 +1,218 @@
+version: "2.0"
+
+stories:
+
+- story: story 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_intro
+  - intent: applicant
+  - action: utter_applicant
+  - intent: new_applicant
+  - action: user_details_form
+  - action: action_save_details
+  - action: utter_recorded
+  
+# =============================================================================
+# - story: story 5
+#   steps:
+#   - intent: thanks
+#   - action: utter_thanks 
+#     
+# - story: story 6
+#   steps:
+#   - intent: bye
+#   - action: utter_bye
+#   
+#   
+# - story: story 7
+#   steps:
+#   - intent: affirm
+#   - action: utter_affirm  
+# 
+# - story: story 9
+#   steps:
+#   - intent: deny
+#   - action: utter_deny 
+# 
+# - story: story 99
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot  
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# =============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+# =============================================================================
+# version: "2.0"
+# 
+# stories:
+# 
+# - story: answer and continue
+#   steps:
+#   - intent: greet
+#   - action: utter_ask_PERSON
+#   - intent: name
+#   - action: utter_ask_date
+#   - intent: DOB
+#   - action: utter_ask_year
+#   - intent: GradYear
+#   - action: utter_ask_exp
+#   - intent: ExpYear
+#   - action: utter_ask_skill
+#   - intent: TechSkill
+#   - action: user_details_form
+#   - action: action_save_details
+#   - action: utter_recorded
+# =============================================================================
+# =============================================================================
+#   - intent: name
+#   - action: user_details_form
+#   - active_loop: user_details_form
+#   - action: utter_ask_dob
+#   - intent: DOB
+#   - action: utter_ask_gradyear
+#   - intent: GradYear
+#   - action: utter_ask_expyear
+#   - intent: ExpYear
+#   - action: utter_ask_skills
+#   - intent: TechSkill
+#   - action: utter_recorded
+#   - active_loop: null
+# =============================================================================
+  
+  
+
+
+# =============================================================================
+# New Story
+# 
+# * greet
+#     - utter_greet
+# * name{"PERSON": "Daksha Dinesh Shenoy"}
+#     - slot{"PERSON":"Daksha Dinesh Shenoy"}
+#     - action_save_name
+#     - utter_ask_dob
+# * DOB{"date":"22/12/1999"}
+#     - slot{"date":"22/12/1999"}
+#     - slot{"date":"22/12/1999"}
+#     - action_save_dob
+#     - utter_ask_gradyear
+# * GradYear{"year":"2001"}
+#     - slot{"year":"2001"}
+# 	- action_save_gradyear
+#     - utter_ask_expyear
+# * ExpYear{"exp":"0"}
+#     - slot{"exp":"0"}
+#     - slot{"year":"2001"}
+#     - action_save_expyear
+# 	- utter_ask_skills
+# * TechSkill{"skill":"Java,Machine Learning,Artificial Intelligence,C,C++"}
+#     - slot{"skill":"Java,Machine Learning,Artificial Intelligence,C,C++"}
+#     - slot{"exp":"0"}
+#     - slot{"year":"2001"}
+# 	- action_save_techskills
+# 	- utter_recorded
+# * thankful
+#     - utter_thankful
+# =============================================================================
+    
+# =============================================================================
+# New Story 2
+# 
+# * greet
+#     - utter_greet
+# * name{"PERSON":"Shubham Singh"}
+#     - slot{"PERSON":"Shubham Singh"}
+#     - action_save_name
+#     - utter_ask_dob
+# * DOB{"date":"22/12/1999"}
+#     - slot{"date":"22/12/1999"}
+#     - action_save_dob
+#     - utter_ask_gradyear
+# * GradYear{"year":"2001"}
+#     - slot{"year":"2001"}
+#     - slot{"date":"22/12/1999"}
+# 	- action_save_gradyear
+#     - utter_ask_expyear
+# * ExpYear{"exp":"0"}
+#     - slot{"exp":"0"}
+#     - slot{"year":"2001"}
+#     - slot{"date":"22/12/1999"}
+#     - action_save_expyear
+# 	- utter_ask_skills
+# * TechSkill{"skill":"Java, Machine Learning, Artificial Intelligence, C, C++"}
+#     - slot{"skill":"Java, Machine Learning, Artificial Intelligence, C, C++"}
+#     - slot{"exp":"0"}
+#     - slot{"year":"2001"}
+# 	- action_save_techskills
+# 	- utter_recorded
+# * thankful
+#     - utter_thankful
+#     
+# =============================================================================
+# =============================================================================
+# New Story 3
+# 
+# * greet
+#     - utter_greet
+# * name{"PERSON":"Jessica"}
+#     - slot{"PERSON":"Jessica"}
+#     - action_save_name
+#     - utter_ask_dob
+# * DOB{"date":"22/12/1999"}
+#     - slot{"date":"22/12/1999"}
+#     - action_save_dob
+#     - utter_ask_gradyear
+# * GradYear{"year":"2001"}
+#     - slot{"year":"2001"}
+#     - slot{"date":"22/12/1999"}
+# 	- action_save_gradyear
+#     - utter_ask_expyear
+# * ExpYear{"exp":"0"}
+#     - slot{"exp":"0"}
+#     - slot{"year":"2001"}
+#     - slot{"date":"22/12/1999"}
+#     - action_save_expyear
+# 	- utter_ask_skills
+# * TechSkill{"skill":"Java,Machine Learning,Artificial Intelligence,C,C++"}
+#     - slot{"skill":"Java,Machine Learning,Artificial Intelligence,C,C++"}
+#     - slot{"exp":"0"}
+#     - slot{"year":"2001"}
+#     - slot{"date":"22/12/1999"}
+# 	- action_save_techskills
+# 	- utter_recorded
+# * thankful
+#     - utter_thankful
+# =============================================================================
+
