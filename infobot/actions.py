@@ -152,7 +152,7 @@ class ConfirmStatus(Action):
             if str(sheet.cell(i,7).value) == check_email:
                 break
             
-        dispatcher.utter_message(text = "Roles Applied for: {}\n".format(sheet.cell(i,4).value)+"\nName Given: {}\n".format(sheet.cell(i,5).value)+"\nDate of Birth: {}\n".format(sheet.cell(i,6).value)+"\nEmail ID: {}\n".format(sheet.cell(i,7).value)+"\nMobile Number: {}\n".format(sheet.cell(i,8).value)+"\nYear of Graduation: {}\n".format(sheet.cell(i,9).value)+"\nYears of Experience: {}\n".format(sheet.cell(i,10).value)+"\nTechnical Skills: {}".format(sheet.cell(i,11).value)+"\nLink to Resume: {}".format(sheet.cell(i,12).value)+"\nCurrent Status of your application: {}".format(sheet.cell(i,13).value))
+        dispatcher.utter_message(text = "Role(s) Applied for: {}\n".format(sheet.cell(i,4).value)+"\nName Given: {}\n".format(sheet.cell(i,5).value)+"\nDate of Birth: {}\n".format(sheet.cell(i,6).value)+"\nEmail ID: {}\n".format(sheet.cell(i,7).value)+"\nMobile Number: {}\n".format(sheet.cell(i,8).value)+"\nYear of Graduation: {}\n".format(sheet.cell(i,9).value)+"\nYears of Experience: {}\n".format(sheet.cell(i,10).value)+"\nTechnical Skills: {}".format(sheet.cell(i,11).value)+"\nLink to Resume: {}".format(sheet.cell(i,12).value)+"\nCurrent Status of your application: {}".format(sheet.cell(i,13).value))
             else:
                 dispatcher.utter_message(text = "Sorry! No data found for {}".format(sheet.cell(i,7).value))
         
